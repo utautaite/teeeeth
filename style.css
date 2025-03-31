@@ -39,10 +39,6 @@ a:hover {
   padding: 1rem;
   text-align: center;
 }
-.header__logo {
-  max-width: 120px;
-  margin-bottom: 0.5rem;
-}
 .header__title {
   font-size: 1.8rem;
   margin-bottom: 0.3rem;
@@ -82,13 +78,8 @@ a:hover {
 }
 
 /* 当院について */
-.section--about__image {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 1rem;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.section--about {
+  /* ここに背景色や余白調整などを追加してもOK */
 }
 
 /* 診療内容 */
@@ -122,21 +113,13 @@ a:hover {
   gap: 2rem;
   align-items: flex-start;
 }
-.doctor-profile__image {
-  width: 250px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
 .doctor-profile__text {
   flex: 1;
 }
 
 /* アクセス */
-.map-container {
-  margin-top: 1rem;
-  max-width: 600px;
-  border: 1px solid #ccc;
-  overflow: hidden;
+.section--access {
+  /* 地図などを置く場合はここにstyleを追加 */
 }
 
 /* お問い合わせフォーム */
