@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>エクセレントデンタルクリニック</title>
+  <!-- スタイルシートの読み込み -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__container">
+      <img src="images/logo.png" alt="エクセレントデンタルクリニック ロゴ" class="header__logo">
+      <h1 class="header__title">エクセレントデンタルクリニック</h1>
+      <p class="header__tagline">～地域に根ざした安心の歯科医療を～</p>
+    </div>
+    <nav class="global-nav">
+      <ul>
+        <li><a href="#about">当院について</a></li>
+        <li><a href="#services">診療内容</a></li>
+        <li><a href="#doctor">スタッフ紹介</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- 当院について -->
+    <section id="about" class="section section--about">
+      <div class="section__content">
+        <h2>当院について</h2>
+        <p>
+          エクセレントデンタルクリニックは、地域の皆さまの歯の健康をサポートするため、
+          最新の治療技術と丁寧なカウンセリングを心がけております。  
+          清潔感のある院内環境とアットホームな雰囲気で、皆さまに安心してご来院いただけるよう努めています。
+        </p>
+        <!-- 院内イメージ画像（サンプル） -->
+        <figure>
+          <img src="images/clinic.jpg" alt="院内の様子" class="section--about__image">
+          <figcaption>院内待合スペース</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 診療内容 -->
+    <section id="services" class="section section--services">
+      <div class="section__content">
+        <h2>診療内容</h2>
+        <div class="services">
+          <article class="service-item">
+            <h3>一般歯科</h3>
+            <p>
+              虫歯や歯周病の治療、クリーニングなど、歯の健康を守る基本的な治療を行います。
+              定期的な検診を通じて、早期発見・早期治療を心がけています。
+            </p>
+          </article>
+          <article class="service-item">
+            <h3>小児歯科</h3>
+            <p>
+              お子さまが怖がらないように配慮しながら、正しい歯磨き指導などを行います。
+              成長過程に合わせた予防と治療を提供します。
+            </p>
+          </article>
+          <article class="service-item">
+            <h3>矯正歯科</h3>
+            <p>
+              歯並びや噛み合わせを改善し、美しく健康的な口元を目指します。  
+              マウスピース矯正からワイヤー矯正まで、患者さまに合った方法をご提案します。
+            </p>
+          </article>
+          <article class="service-item">
+            <h3>インプラント</h3>
+            <p>
+              失った歯の代わりに人工の歯根を埋め込み、機能を回復させます。  
+              十分なカウンセリングと事前検査を行い、安全性を第一に治療を進めます。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- スタッフ紹介 -->
+    <section id="doctor" class="section section--doctor">
+      <div class="section__content">
+        <h2>スタッフ紹介</h2>
+        <div class="doctor-profile">
+          <img src="images/doctor.jpg" alt="院長の写真" class="doctor-profile__image">
+          <div class="doctor-profile__text">
+            <h3>院長：山田 太郎</h3>
+            <p>
+              大学病院での勤務を経て、地元であるこの町にエクセレントデンタルクリニックを開院しました。  
+              「痛みの少ない治療」をモットーに、どんな方にもわかりやすい説明と優しい治療を心がけています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="section section--access">
+      <div class="section__content">
+        <h2>アクセス</h2>
+        <p>
+          〇〇駅から徒歩5分、サンプルバス停から徒歩2分です。専用駐車場も完備しておりますので、
+          お車でも安心してご来院いただけます。
+        </p>
+        <!-- Googleマップの埋め込み例 (実際には有効なiframeを使用) -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1234567890!2d139.xxxxxx!3d35.xxxxxx!"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="section section--contact">
+      <div class="section__content">
+        <h2>お問い合わせ</h2>
+        <p>ご予約やご不明な点がございましたら、下記フォームまたはお電話にてお問い合わせください。</p>
+        <p><strong>電話番号：</strong>03-1234-5678</p>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-form__field">
+            <label for="name">お名前 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="email">メールアドレス <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="contact-form__actions">
+            <input type="submit" value="送信">
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p>〒123-4567 東京都サンプル区1-2-3 エクセレントビル1F</p>
+      <p>© 2025 Excellent Dental Clinic</p>
+    </div>
+  </footer>
+
+</body>
+</html>
